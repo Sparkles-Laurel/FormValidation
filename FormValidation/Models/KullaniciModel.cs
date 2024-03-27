@@ -18,7 +18,7 @@ namespace FormValidation.Models {
 
         [Required(ErrorMessage = "Şifre alanı boş geçilemez")]
         [RegularExpression(@"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}",
-        ErrorMessage = "Harf ve Karakterden oluşan en az 8 karakter giriniz.")]
+                    ErrorMessage = "Harf ve Karakterden oluşan en az 8 karakter giriniz.")]
         public string? Sifre { get; set; }
         [Required(ErrorMessage = "Şifrenizi tekrar giriniz")]
         [Compare("Sifre", ErrorMessage = "Şifreler Aynı Değil")]
